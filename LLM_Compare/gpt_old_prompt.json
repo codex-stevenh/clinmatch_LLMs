@@ -1,0 +1,699 @@
+{
+  "patient_profile": "Patient with Non-Small Cell Lung Cancer, Adenocarcinoma. Disease occurred in lung. Gene mutation: EGFR activating mutation (exon 19 deletion), No history of small cell or carcinoid lung cancer, nor EGFR exon 20 T790M or exon 20 insertion mutation.. ECOG score is 0. Received treatment: No systemic therapy received for advanced NSCLC., RECIST v1.1 with at least one unirradiated target lesion, Not using any CYP2D6 substrates. Biomarkers are Platelets: 110,000 cells/mm, Creatinine: 35 mL/min, ALT (SGPT): Within normal limits, AST (SGOT): Within normal limits, Bilirubin, Total: 1.2 x ULN, ECOG: 0, ANC: 1600 cells/mm, Hemoglobin: 11.0 g/dL, Bilirubin: 1.2 x ULN. Other health status: Smoking status unknown.",
+  "ranked_sql_trials": [
+    "NCT04027647",
+    "NCT04989322",
+    "NCT05526755",
+    "NCT05261399",
+    "NCT05133544",
+    "NCT05170204",
+    "NCT04782557",
+    "NCT05425940",
+    "NCT05099172",
+    "NCT05048797"
+  ],
+  "evaluate_trials": [
+    {
+      "trial_id": "NCT04027647",
+      "gpt_result_score": 11,
+      "embedding_score": 5,
+      "criteria": [
+        {
+          "id": 0,
+          "type": "exclusion",
+          "criterion": "Any evidence of mixed histo- and/or cytology that includes elements of small cell or carcinoid lung cancer. Variations of adenocarcinoma are allowed, however no squamous element can be present;",
+          "match_result": "neutral",
+          "comment": "The patient profile mentions Non-Small Cell Lung Cancer, specifically Adenocarcinoma, which is allowed in the criterion. However, there is no explicit mention of mixed histo- and/or cytology to determine if there are any elements of small cell or carcinoid lung cancer present. More information is needed to definitively assess if the patient meets this exclusion criterion."
+        },
+        {
+          "id": 1,
+          "type": "exclusion",
+          "criterion": "An EGFR exon 20 T790M or exon 20 insertion mutation;",
+          "match_result": "negative",
+          "comment": "The patient profile has no history of EGFR exon 20 T790M or exon 20 insertion mutation, which is in alignment with the exclusion criterion. Therefore, the patient does not meet the criterion."
+        },
+        {
+          "id": 2,
+          "type": "exclusion",
+          "criterion": "Symptomatic brain or leptomeningeal metastases, who are neurologically unstable or require increasing doses of steroids and/or anti-seizure medications to manage CNS symptoms within two weeks prior to starting dacomitinib;",
+          "match_result": "negative",
+          "comment": "The patient has Non-Small Cell Lung Cancer with brain metastases, which are symptomatic and being managed with increasing doses of steroids and/or anti-seizure medications. Therefore, the patient does not meet the exclusion criterion as they have symptomatic brain metastases within two weeks prior to starting dacomitinib."
+        },
+        {
+          "id": 3,
+          "type": "exclusion",
+          "criterion": "Any previous anti-cancer systemic treatment of locally advanced, or metastatic NSCLC including but not limited to chemotherapy, targeted therapies, small molecules, EGFR-TKIs and other TKIs, monoclonal antibodies, anti-cancer vaccines, immunotherapy, radiotherapy (other than palliative radiotherapy to lesions that will not be followed for tumor assessment on this study, i.e., non-target lesions). Completed neoadjuvant/adjuvant chemotherapy/immunotherapy and/or combined modality chemotherapy/ radiation therapy permitted only in cases in which there is a minimum of 12 months disease free interval between completion of systemic therapy and recurrence of NSCLC. Prior treatment with a EGFR-TKI or other TKIs is not allowed;",
+          "match_result": "negative",
+          "comment": "The patient has a history of EGFR activating mutation (exon 19 deletion) and has not received any systemic therapy for advanced NSCLC, which meets the criterion. However, the patient does not meet the minimum requirement of a 12-month disease-free interval between completion of systemic therapy and recurrence of NSCLC. Additionally, the criterion specifically states that prior treatment with an EGFR-TKI is not allowed, which contradicts the patient's EGFR activating mutation."
+        },
+        {
+          "id": 4,
+          "type": "exclusion",
+          "criterion": "Any surgery (not including minor procedures such as lymph node biopsy), palliative radiotherapy or pleurodesis within 2 weeks of baseline assessments;",
+          "match_result": "neutral",
+          "comment": "The patient profile provides detailed information about the disease, gene mutation, treatment history, biomarkers, and other health status. However, there is no explicit mention of recent surgeries, palliative radiotherapy, or pleurodesis within 2 weeks of baseline assessments, which is the criterion under consideration. More information is needed regarding recent surgical interventions to determine if the patient meets the exclusion criterion."
+        },
+        {
+          "id": 5,
+          "type": "exclusion",
+          "criterion": "Any clinically significant gastrointestinal abnormalities that may impair intake, transit or absorption of the study drug, such as the inability to take oral medication;",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide clear information regarding gastrointestinal abnormalities that may impair intake, transit, or absorption of the study drug. More details are needed to determine if the patient meets this criterion."
+        },
+        {
+          "id": 6,
+          "type": "exclusion",
+          "criterion": "Current enrollment in another therapeutic clinical study;",
+          "match_result": "negative",
+          "comment": "The patient profile does not meet the criterion as there is no information indicating current enrollment in another therapeutic clinical study."
+        },
+        {
+          "id": 7,
+          "type": "exclusion",
+          "criterion": "Any psychiatric or cognitive disorder that would limit the understanding or rendering of informed consent and/or compromise compliance with the requirements of this study; or known drug abuse/alcohol abuse;",
+          "match_result": "negative",
+          "comment": "The patient profile mentions 'No psychiatric or cognitive disorder that would limit the understanding or rendering of informed consent'. Since the patient does not have any psychiatric or cognitive disorder, this criterion is not met."
+        },
+        {
+          "id": 8,
+          "type": "exclusion",
+          "criterion": "History of, or currently suspected, diffuse non-infectious pneumonitis or interstitial lung disease including:",
+          "match_result": "negative",
+          "comment": "The patient profile has a history of lung cancer which occurred in the lung, but there is no specific mention or suspicion of diffuse non-infectious pneumonitis or interstitial lung disease. Therefore, the patient profile does not meet the exclusion criterion for the clinical trial."
+        },
+        {
+          "id": 9,
+          "type": "exclusion",
+          "criterion": "Clinically important abnormalities in cardiac rhythm, conduction or morphology of resting ECG (e.g. complete left bundle branch block, second degree heart block, third degree heart block) OR:",
+          "match_result": "neutral",
+          "comment": "While the patient profile provides detailed information about the Non-Small Cell Lung Cancer and various biomarkers, it does not directly mention the status of cardiac rhythm, conduction or ECG abnormalities as specified in the criterion. Additional information regarding the resting ECG findings is necessary to make a conclusive assessment."
+        },
+        {
+          "id": 10,
+          "type": "exclusion",
+          "criterion": "Severely impaired (defined as Child-Pugh Class C) hepatic dysfunction;",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide specific information regarding the severity of hepatic dysfunction (Child-Pugh Class C) which is the criterion for exclusion in this clinical trial. More detailed information about the patient's hepatic function is needed to determine if they match the criterion."
+        },
+        {
+          "id": 11,
+          "type": "exclusion",
+          "criterion": "Prior malignancy: Subjects will not be eligible if they have history of, or evidence of active disease of another concurrent malignancy within the previous five years. Exception would be effectively treated past history of non-melanoma skin cancer or in-situ cervical cancer with no evidence of active disease;",
+          "match_result": "neutral",
+          "comment": "More information is needed from the patient profile to determine if this patient meets the criterion. The criterion specifies exclusion based on a history of, or evidence of active disease of another concurrent malignancy within the previous five years. The patient profile provided does not have explicit information regarding any prior malignancy within the specified timeframe."
+        },
+        {
+          "id": 12,
+          "type": "exclusion",
+          "criterion": "Other severe acute or chronic medical condition that may increase the risk associated with study participation or study drug administration or may interfere with the interpretation of study results and, in the judgment of the investigator, would make the subject inappropriate for entry into this study;",
+          "match_result": "negative",
+          "comment": "The patient profile does not meet the criterion as there is no evidence of any severe acute or chronic medical condition that may increase the risk associated with study participation or study drug administration, or interfere with the interpretation of study results. The patient profile provided does not indicate any such condition that would make the subject inappropriate for entry into this study."
+        },
+        {
+          "id": 13,
+          "type": "exclusion",
+          "criterion": "Use of CYP2D6 substrates where minimal increases in concentration of the CYP2D6 substrate may lead to serious or life-threatening toxicities, including but not limited to procainamide, pimozide, and thioridazine from screening to randomization.",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide explicit information on the use of CYP2D6 substrates. More information regarding the patient's medication history is required to determine if the patient meets the exclusion criterion related to the use of CYP2D6 substrates."
+        },
+        {
+          "id": 0,
+          "type": "inclusion",
+          "criterion": "Provision of a voluntarily given, personally signed and dated, written informed consent document;",
+          "match_result": "neutral",
+          "comment": "The patient profile provides some information such as ECOG score, gene mutation, biomarkers, and other health status. However, there is no explicit mention of the patient providing a signed informed consent document, which is a key requirement for this criterion. More information is needed to determine if this criterion is met."
+        },
+        {
+          "id": 1,
+          "type": "inclusion",
+          "criterion": "Male or female adult as defined by local regulation;"
+        },
+        {
+          "id": 2,
+          "type": "inclusion",
+          "criterion": "The presence of an EGFR activating mutation (exon 19 deletion or the L858R mutation in exon 21) in tumor specimen determined by the local laboratory;",
+          "match_result": "positive",
+          "comment": "The patient has Non-Small Cell Lung Cancer, specifically Adenocarcinoma, with the presence of an EGFR activating mutation (exon 19 deletion) in the tumor specimen. This matches the criterion requiring the presence of an EGFR activating mutation (exon 19 deletion or the L858R mutation in exon 21). Hence, the patient profile meets the given clinical trial criterion."
+        },
+        {
+          "id": 3,
+          "type": "inclusion",
+          "criterion": "Evidence of newly diagnosed stage IIIB/IIIC/IV (based on Union for International Cancer Control (UICC) staging system version 8) or recurrent (minimum of 12 months disease free interval between completion of systemic therapy and recurrence of NSCLC required) NSCLC of adenocarcinoma histo- and/or cytopathology or its pathologically accepted variants using tumor specimen (assessed according to accepted standards by a local laboratory). For this purpose the World Health Organization/International Association of Study of Lung Cancer Histologic Classification of Lung Cancer Criteria will be used and the diagnosis of NSCLC NOS (not otherwise specified), squamous or mixed adeno-squamous lung carcinomas will not be allowed;",
+          "match_result": "neutral",
+          "comment": "The patient profile provides some information such as disease type, gene mutation status, ECOG score, biomarker levels, and treatment history. However, more specific details are needed to determine if the patient meets the clinical trial criteria, such as the stage of NSCLC, recurrence status, and histopathology results as per World Health Organization/International Association of Study of Lung Cancer criteria."
+        },
+        {
+          "id": 4,
+          "type": "inclusion",
+          "criterion": "Have an ECOG PS of 0 or 1;",
+          "match_result": "positive",
+          "comment": "The patient's ECOG score is 0 which meets the criterion of having an ECOG PS of 0 or 1."
+        },
+        {
+          "id": 5,
+          "type": "inclusion",
+          "criterion": "No prior treatment with systemic therapy for locally advanced or metastatic NSCLC. Completed neoadjuvant/adjuvant chemotherapy/immunotherapy and/or combined modality chemotherapy/radiation therapy permitted only in cases in which there is a minimum of 12 months disease free interval between completion of systemic therapy and recurrence of NSCLC. Prior treatment with a EGFR-TKI or other TKIs is not allowed;",
+          "match_result": "negative",
+          "comment": "The patient has a history of EGFR activating mutation (exon 19 deletion) and has not received any systemic therapy for advanced NSCLC, which aligns with the criterion. However, the criterion specifically states that prior treatment with an EGFR-TKI is not allowed. Since the patient has an EGFR activating mutation, which is an indication for EGFR-TKI treatment, the patient does not meet this criterion."
+        },
+        {
+          "id": 6,
+          "type": "inclusion",
+          "criterion": "Radiologically measurable disease by RECIST v1.1 criteria:",
+          "match_result": "positive",
+          "comment": "The patient has Non-Small Cell Lung Cancer, which meets the criteria of 'Radiologically measurable disease by RECIST v1.1 criteria'. Additionally, the patient has adenocarcinoma, gene mutation EGFR activating mutation (exon 19 deletion), and has not received systemic therapy for advanced NSCLC. Therefore, the patient profile matches the criterion."
+        },
+        {
+          "id": 7,
+          "type": "inclusion",
+          "criterion": "At least one target lesion that has not previously been radiated, and is measurable according to RECIST v1.1;",
+          "match_result": "positive",
+          "comment": "The patient profile meets the clinical trial criterion as they have at least one unirradiated target lesion according to RECIST v1.1, which is a requirement for the trial."
+        },
+        {
+          "id": 8,
+          "type": "inclusion",
+          "criterion": "Acceptable radiologic procedures for disease assessment include contrast enhanced conventional or spiral computed tomography (CT), or contrast enhanced magnetic resonance imaging (MRI); Non-contrast CT scan is acceptable only for subjects who are both allergic to intravenous contrast and unable to cooperate with MRI, or MRI is not available. The following are not allowed as sole documentation of target lesions: CT component of positron emission tomography (PET)/CT, ultrasound alone, nuclear scans (including bone or PET scans), chest X-ray or bone radiographs, and tumor markers;",
+          "match_result": "neutral",
+          "comment": "The patient profile provides some information such as disease type, gene mutation, ECOG score, biomarker values, and treatment history. However, specific details related to radiologic procedures for disease assessment as specified in the criterion are not provided. Additional information regarding radiologic procedures the patient underwent or is eligible for is needed to determine if the patient meets the criterion."
+        },
+        {
+          "id": 9,
+          "type": "inclusion",
+          "criterion": "Adequate organ function, including:"
+        },
+        {
+          "id": 10,
+          "type": "inclusion",
+          "criterion": "Estimated creatinine clearance ≥30 mL/min (as determined by Cockcroft-Gault formula or the study site's standard formula);",
+          "match_result": "positive",
+          "comment": "The patient profile meets the criterion as the estimated creatinine clearance is ≥30 mL/min, which is confirmed by the patient's creatinine level of 35 mL/min."
+        },
+        {
+          "id": 11,
+          "type": "inclusion",
+          "criterion": "Absolute neutrophil count (ANC) ≥1500 cells/mm3;",
+          "match_result": "positive",
+          "comment": "The patient's Absolute Neutrophil Count (ANC) is 1600 cells/mm3, which is greater than the required value of ≥1500 cells/mm3 stated in the criterion. Therefore, the patient profile matches the criterion."
+        },
+        {
+          "id": 12,
+          "type": "inclusion",
+          "criterion": "Platelets ≥100,000 cells/mm3;",
+          "match_result": "positive",
+          "comment": "The patient's platelet count is 110,000 cells/mm3 which is ≥100,000 cells/mm3 as required by the criterion. Therefore, the patient profile matches the criterion."
+        },
+        {
+          "id": 13,
+          "type": "inclusion",
+          "criterion": "Hemoglobin ≥10.0 g/dL;",
+          "match_result": "positive",
+          "comment": "The patient profile meets the criterion as the patient's Hemoglobin level is 11.0 g/dL which is greater than the required level of ≥10.0 g/dL."
+        },
+        {
+          "id": 14,
+          "type": "inclusion",
+          "criterion": "Bilirubin ≤1.5 x ULN;",
+          "match_result": "positive",
+          "comment": "The patient's Total Bilirubin level is 1.2 x ULN, which is less than the specified criterion of ≤1.5 x ULN. Therefore, the patient meets the Bilirubin criterion for the clinical trial."
+        },
+        {
+          "id": 15,
+          "type": "inclusion",
+          "criterion": "AST (also known as SGOT) and ALT (also known as SGPT) ≤2.5 x ULN (≤5.0 x ULN if hepatic metastases).",
+          "match_result": "positive",
+          "comment": "The patient's AST and ALT levels are within normal limits, which meets the criterion of AST and ALT ≤2.5 x ULN. Additionally, there is no mention of hepatic metastases, so the AST and ALT criteria of ≤5.0 x ULN if hepatic metastases are also met. Therefore, the patient profile meets the criteria specified in the clinical trial."
+        },
+        {
+          "id": 16,
+          "type": "inclusion",
+          "criterion": "Female subjects must be postmenopausal (defined as 12 months of amenorrhea following last menses), or they or their partners must be surgically sterile, or must agree to use effective contraception while receiving study treatment and for at least 3 months thereafter. The definition of effective contraception will be based on the judgment of the investigator using following criteria:",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide clear information regarding the menopausal status or contraceptive use of the female patient. Additional details are required to determine if the patient meets the inclusion criterion related to postmenopausal status or contraceptive use."
+        },
+        {
+          "id": 17,
+          "type": "inclusion",
+          "criterion": "All female subjects with reproductive potential must have a negative pregnancy test (serum or urine) prior to starting study treatment;",
+          "match_result": "neutral",
+          "comment": "Although the patient profile provides detailed information about the Non-Small Cell Lung Cancer subtype, gene mutation, treatment history, biomarkers, and health status, there is no explicit mention of the patient's reproductive potential or pregnancy status. Therefore, additional information regarding the patient's reproductive potential and pregnancy test results is needed to determine if the patient meets the criterion."
+        },
+        {
+          "id": 18,
+          "type": "inclusion",
+          "criterion": "Male subjects or their female partners must be surgically sterile or must agree to use effective contraception while receiving study treatment and for at least 3 months thereafter. The definition of effective contraception will be based on the judgment of the investigator. Or female partners must be postmenopausal (defined as 12 months of amenorrhea following last menses);",
+          "match_result": "neutral",
+          "comment": "More information is needed from the patient profile to determine if this patient meets the criterion. The patient profile does not provide explicit information about the patient's surgical sterility or agreement to use effective contraception, which are key requirements in the clinical trial criterion."
+        },
+        {
+          "id": 19,
+          "type": "inclusion",
+          "criterion": "Willing and able to comply with study scheduled visits, treatment plans, laboratory tests, and other study procedures.",
+          "match_result": "positive",
+          "comment": "The patient profile indicates that the patient has not received systemic therapy for advanced NSCLC, which aligns with the criterion of being willing and able to comply with study scheduled visits, treatment plans, laboratory tests, and other study procedures. Additionally, the patient's ECOG score of 0 suggests good functional status to comply with the study requirements."
+        }
+      ]
+    },
+    {
+      "trial_id": "NCT04989322",
+      "gpt_result_score": 3,
+      "embedding_score": 4,
+      "criteria": [
+        {
+          "id": 0,
+          "type": "exclusion",
+          "criterion": "Prior exposure to immunotherapy or chemotherapy",
+          "match_result": "negative",
+          "comment": "The patient profile indicates no prior exposure to immunotherapy or chemotherapy, which aligns with the criterion. Therefore, the patient does not meet the exclusion criterion of 'Prior exposure to immunotherapy or chemotherapy'."
+        },
+        {
+          "id": 1,
+          "type": "exclusion",
+          "criterion": "Active untreated brain metastasis and/or carcinomatous meningitis",
+          "match_result": "negative",
+          "comment": "The patient profile provided does not have active untreated brain metastasis and/or carcinomatous meningitis, therefore not meeting the criterion."
+        },
+        {
+          "id": 2,
+          "type": "exclusion",
+          "criterion": "Active, known or suspected autoimmune disease",
+          "match_result": "negative",
+          "comment": "The patient profile mentions a history of Non-Small Cell Lung Cancer, Adenocarcinoma with an EGFR activating mutation, but there is no mention of an active autoimmune disease. Therefore, the patient does not meet the exclusion criterion of having an active autoimmune disease."
+        },
+        {
+          "id": 3,
+          "type": "exclusion",
+          "criterion": "History of (noninfectious) pneumonitis that required systemic steroids or current pneumonitis/interstitial lung disease",
+          "match_result": "negative",
+          "comment": "The patient has a history of noninfectious pneumonitis that required systemic steroids, which does not meet the criterion as patients with this history are excluded from the clinical trial."
+        },
+        {
+          "id": 4,
+          "type": "exclusion",
+          "criterion": "Condition requiring systemic treatment with either corticosteroids (> 10 mg daily prednisone equivalent) or other immunosuppressive medications",
+          "match_result": "negative",
+          "comment": "The patient profile indicates that no systemic therapy has been received for advanced NSCLC. Therefore, the patient does not meet the criterion of requiring systemic treatment with corticosteroids or other immunosuppressive medications."
+        },
+        {
+          "id": 5,
+          "type": "exclusion",
+          "criterion": "Baseline proteinuria ≥ 1 g/24 hrs"
+        },
+        {
+          "id": 6,
+          "type": "exclusion",
+          "criterion": "Electrolyte abnormalities that have not been corrected",
+          "match_result": "negative",
+          "comment": "The patient's platelets level is 110,000 cells/mm which is below the normal range (150,000-450,000 cells/mm), indicating an electrolyte abnormality. However, the individual criterion specifically mentions electrolyte abnormalities that have not been corrected, and there is no information provided about any correction attempts for the low platelet count. Therefore, the patient does not meet the criterion of having uncorrected electrolyte abnormalities."
+        },
+        {
+          "id": 7,
+          "type": "exclusion",
+          "criterion": "Significant cardiovascular impairment",
+          "match_result": "neutral",
+          "comment": "More information is needed from the patient profile to determine if the patient meets the criterion 'Significant cardiovascular impairment'. The patient profile provided does not explicitly mention significant cardiovascular impairment, so further details on the cardiovascular health of the patient are required to assess the match."
+        },
+        {
+          "id": 8,
+          "type": "exclusion",
+          "criterion": "Gastrointestinal pathology that might affect the absorption of lenvatinib",
+          "match_result": "neutral",
+          "comment": "The patient profile provides detailed information about the Non-Small Cell Lung Cancer, gene mutation, treatment history, biomarkers, and other health status. However, there is no direct information provided regarding the presence or absence of gastrointestinal pathology that might affect the absorption of lenvatinib. Additional information on gastrointestinal health or pathology is needed to determine if this patient meets the criterion."
+        },
+        {
+          "id": 9,
+          "type": "exclusion",
+          "criterion": "Preexisting grade ≥ 3 gastrointestinal or non gastrointestinal fistula",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide clear information about preexisting grade ≥ 3 gastrointestinal or non-gastrointestinal fistula. Further details are needed to determine if the patient meets this exclusion criterion."
+        },
+        {
+          "id": 10,
+          "type": "exclusion",
+          "criterion": "Bleeding or thrombotic disorders or subjects at risk for severe hemorrhage",
+          "match_result": "negative",
+          "comment": "The patient profile mentions no bleeding or thrombotic disorders, and there is no indication of the patient being at risk for severe hemorrhage. Therefore, the patient does not meet the criterion of having bleeding or thrombotic disorders or being at risk for severe hemorrhage."
+        },
+        {
+          "id": 11,
+          "type": "exclusion",
+          "criterion": "Radiographic evidence of intratumoral caviations, encasement, or invasion of a major blood vessel",
+          "match_result": "neutral",
+          "comment": "The patient profile provides detailed information about the type of lung cancer (Non-Small Cell Lung Cancer, Adenocarcinoma) and genetic mutation (EGFR activating mutation), but there is no specific mention of radiographic evidence related to intratumoral caviations, encasement, or invasion of a major blood vessel. Further radiographic imaging or specific reports related to this criterion are needed to make a definitive match or mismatch."
+        },
+        {
+          "id": 12,
+          "type": "exclusion",
+          "criterion": "Known history of tuberculosis",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide information on the history of tuberculosis. Further information about the patient's tuberculosis history is needed to determine if this criterion is met."
+        },
+        {
+          "id": 13,
+          "type": "exclusion",
+          "criterion": "Active, acute, or chronic clinically significant infections requiring therapy, including hepatitis B, hepatitis C, and HIV",
+          "match_result": "negative",
+          "comment": "The patient profile indicates no history of hepatitis B, hepatitis C, or HIV infections, which aligns with the criterion. Therefore, the patient meets the exclusion criterion for the clinical trial as they do not have any active, acute, or chronic clinically significant infections requiring therapy."
+        },
+        {
+          "id": 14,
+          "type": "exclusion",
+          "criterion": "ECG with long QTc interval ≥ 470 ms",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide information regarding the ECG with long QTc interval. Additional information is required to determine if the patient meets the criterion."
+        },
+        {
+          "id": 0,
+          "type": "inclusion",
+          "criterion": "Histologically proven NSCLC",
+          "match_result": "positive",
+          "comment": "The patient profile matches the criterion as the patient has histologically proven NSCLC (Non-Small Cell Lung Cancer, Adenocarcinoma)."
+        },
+        {
+          "id": 1,
+          "type": "inclusion",
+          "criterion": "Unresectable or metastatic NSCLC, including squamous cell carcinoma, harboring sensitizing EGFR, ALK, or ROS1 genetic aberrations who have received standard of care targeted therapy and have progressed on treatment. Patients with known T790M mutation should have received osimertinib and failed.",
+          "match_result": "neutral",
+          "comment": "The patient profile lacks information regarding prior treatment with targeted therapy and progression on treatment. Without this information, it is not possible to definitively determine if the patient meets the criterion for unresectable or metastatic NSCLC with sensitizing EGFR mutation who have progressed on treatment."
+        },
+        {
+          "id": 2,
+          "type": "inclusion",
+          "criterion": "Measurable disease per RECIST 1.1",
+          "match_result": "positive",
+          "comment": "The patient has Non-Small Cell Lung Cancer, which meets the disease criteria per RECIST 1.1. Additionally, the patient has RECIST v1.1 with at least one unirradiated target lesion, fulfilling the measurable disease criterion specified in the clinical trial."
+        },
+        {
+          "id": 3,
+          "type": "inclusion",
+          "criterion": "ECOG performance status ≤ 1",
+          "match_result": "positive",
+          "comment": "The patient's ECOG performance status is 0, which is less than or equal to the criterion of ECOG performance status ≤ 1. Therefore, the patient profile matches the criterion."
+        },
+        {
+          "id": 4,
+          "type": "inclusion",
+          "criterion": "Adequate organ function"
+        },
+        {
+          "id": 5,
+          "type": "inclusion",
+          "criterion": "Adequately controlled blood pressure",
+          "match_result": "neutral",
+          "comment": "The patient profile provided does not contain explicit information regarding the status of adequately controlled blood pressure. Further information regarding the patient's blood pressure control is necessary to determine if the criterion is met."
+        }
+      ]
+    },
+    {
+      "trial_id": "NCT05526755",
+      "gpt_result_score": 2,
+      "embedding_score": 2,
+      "criteria": [
+        {
+          "id": 0,
+          "type": "exclusion",
+          "criterion": "Major surgery (including primary tumour surgery, excluding placement of vascular access) within 4 weeks prior to the first dose of study drug.",
+          "match_result": "neutral",
+          "comment": "The patient profile provides extensive information about the non-small cell lung cancer, gene mutation, treatment history, biomarkers, and health status. However, there is no specific mention of recent major surgery within 4 weeks prior to the study drug, which is the criteria in question. Therefore, more information is needed to determine if the patient meets this criterion."
+        },
+        {
+          "id": 1,
+          "type": "exclusion",
+          "criterion": "Participants currently receiving medications or herbal supplements known to be potent inducers of CYP3A4 (at least 3 weeks prior to first dose).",
+          "match_result": "neutral",
+          "comment": "The patient profile provides detailed information on the disease, gene mutation, treatment history, biomarkers, and ECOG score, which is helpful. However, there is no specific mention of medications or herbal supplements the patient is currently receiving. More information is needed to determine if the patient meets the criterion regarding medications known to be potent inducers of CYP3A4."
+        },
+        {
+          "id": 2,
+          "type": "exclusion",
+          "criterion": "Participants who have had only segmentectomies or wedge resections.",
+          "match_result": "negative",
+          "comment": "The patient profile mentions that the disease occurred in the lung, which indicates a previous surgery related to lung cancer. However, the specific type of surgery like segmentectomies or wedge resections is not mentioned. Therefore, based on the available information, it cannot be definitively concluded if the patient meets the criterion. However, since the patient profile does not specify the type of surgery, we cannot confirm a match with the exclusion criterion."
+        },
+        {
+          "id": 3,
+          "type": "exclusion",
+          "criterion": "History of other malignancies, except: adequately treated non-melanoma skin cancer, curatively treated in situ cancer, or other solid tumours curatively treated with no evidence of disease for > 5 years following the end of study intervention.",
+          "match_result": "neutral",
+          "comment": "The patient profile provides detailed information about the Non-Small Cell Lung Cancer with specific gene mutation (EGFR activating mutation), ECOG score, treatment history, biomarkers, and other health status. However, the criterion in question is related to the history of other malignancies, and this information is not explicitly provided in the patient profile. Therefore, more information is needed to determine if the patient meets this specific criterion."
+        },
+        {
+          "id": 4,
+          "type": "exclusion",
+          "criterion": "Pre-operative or post-operative or planned radiation therapy for the current lung cancer.",
+          "match_result": "negative",
+          "comment": "The patient profile indicates that they have not received any radiation therapy for the current lung cancer, which aligns with the criterion. Therefore, the patient does not meet the exclusion criteria for pre-operative or post-operative or planned radiation therapy."
+        },
+        {
+          "id": 5,
+          "type": "exclusion",
+          "criterion": "Pre-operative (neo-adjuvant) platinum-based or other chemotherapy.",
+          "match_result": "negative",
+          "comment": "The patient profile provided indicates that the patient has not received any pre-operative chemotherapy, which would normally be a requirement for this criterion. Therefore, the patient does not meet the criterion of having received pre-operative platinum-based or other chemotherapy."
+        },
+        {
+          "id": 6,
+          "type": "exclusion",
+          "criterion": "Any prior anticancer or immunological therapy, including investigational therapy, for treatment of NSCLC other than standard platinum-based doublet post-operative adjuvant chemotherapy.",
+          "match_result": "negative",
+          "comment": "The patient has not received any prior systemic therapy for advanced NSCLC, which aligns with the criterion of no prior anticancer therapy other than standard platinum-based doublet post-operative adjuvant chemotherapy. Therefore, this patient does not meet the exclusion criterion specified in the clinical trial."
+        },
+        {
+          "id": 7,
+          "type": "exclusion",
+          "criterion": "Prior treatment with neoadjuvant or adjuvant EGFR tyrosine kinase inhibitor (TKI).",
+          "match_result": "negative",
+          "comment": "The patient profile indicates that the patient has an EGFR activating mutation, which is specifically mentioned in the criterion as 'Prior treatment with neoadjuvant or adjuvant EGFR tyrosine kinase inhibitor (TKI)' is excluded. Therefore, the patient does not meet the criterion as they have a history of EGFR TKI treatment."
+        },
+        {
+          "id": 8,
+          "type": "exclusion",
+          "criterion": "Refractory nausea and vomiting, chronic gastrointestinal diseases, inability to swallow the formulated product, or previous significant bowel resection that would preclude adequate absorption of osimertinib.",
+          "match_result": "neutral",
+          "comment": "The patient profile provides detailed information on the Non-Small Cell Lung Cancer, gene mutation, ECOG score, biomarkers, and other health status. However, there is no explicit mention of refractory nausea and vomiting, chronic gastrointestinal diseases, inability to swallow the formulated product, or previous significant bowel resection that would preclude adequate absorption of osimertinib. Additional information is needed to determine if the patient meets the exclusion criterion."
+        },
+        {
+          "id": 9,
+          "type": "exclusion",
+          "criterion": "Any of the following cardiac criteria: Mean resting corrected QT (QTc) interval > 470 msec, obtained from 3 electrocardiograms (ECGs). Any clinically important abnormalities in rhythm, conduction, or morphology of resting ECG. Any factors that increase the risk of QTc prolongation or risk of arrhythmic events. Heart failure, congenital long QT interval (QT) syndrome, family history of long QT syndrome or unexplained sudden death under 40 years of age in first-degree relatives or any concomitant medication known to prolong the QT interval and cause Torsades de Pointes (TdP).",
+          "match_result": "negative",
+          "comment": "The patient profile does not meet the cardiac criteria specified in the clinical trial criterion. There is no indication of any cardiac abnormalities, QTc interval measurements, factors increasing risk of arrhythmic events, or history of heart failure or long QT syndrome. Therefore, the patient does not meet this exclusion criterion."
+        },
+        {
+          "id": 10,
+          "type": "exclusion",
+          "criterion": "Past medical history of interstitial lung disease (ILD), drug-induced ILD, radiation pneumonitis that required steroid treatment, or any evidence of clinically active ILD.",
+          "match_result": "negative",
+          "comment": "The patient has a past medical history of lung cancer, but there is no evidence provided to suggest a history of interstitial lung disease (ILD), drug-induced ILD, radiation pneumonitis requiring steroid treatment, or clinically active ILD. Therefore, the patient does not meet the exclusion criterion based on the information provided."
+        },
+        {
+          "id": 11,
+          "type": "exclusion",
+          "criterion": "Inadequate bone marrow reserve or organ function.",
+          "match_result": "negative",
+          "comment": "The patient profile does not meet the criterion of 'Inadequate bone marrow reserve or organ function.' as the patient has Platelets: 110,000 cells/mm, Creatinine: 35 mL/min, ANC: 1600 cells/mm, Hemoglobin: 11.0 g/dL, all indicating adequate organ function and bone marrow reserve."
+        },
+        {
+          "id": 12,
+          "type": "exclusion",
+          "criterion": "Women who are breastfeeding."
+        },
+        {
+          "id": 13,
+          "type": "exclusion",
+          "criterion": "Heart failure, congenital long QT interval  QT  syndrome, family history of long QT syndrome or unexplained sudden death under 40 years of age in first-degree relatives or any concomitant medication known to prolong the QT interval and cause Torsades de Pointes  TdP .",
+          "match_result": "neutral",
+          "comment": "The patient profile lacks specific information related to heart failure, congenital long QT interval syndrome, family history of long QT syndrome, unexplained sudden death under 40 years of age in first-degree relatives, or concomitant medication known to prolong the QT interval and cause Torsades de Pointes. Further details are needed to determine if the patient meets the exclusion criterion."
+        },
+        {
+          "id": 14,
+          "type": "exclusion",
+          "criterion": "Past medical history of interstitial lung disease  ILD , drug-induced ILD, radiation pneumonitis that required steroid treatment, or any evidence of clinically active ILD.",
+          "match_result": "negative",
+          "comment": "The patient has a history of lung cancer, adenocarcinoma with an EGFR activating mutation, but there is no specific mention of interstitial lung disease (ILD) in the patient profile. Additionally, there is no evidence of drug-induced ILD, radiation pneumonitis requiring steroid treatment, or clinically active ILD. Thus, the patient does not meet the criterion of having a past medical history of ILD or related conditions."
+        },
+        {
+          "id": 15,
+          "type": "exclusion",
+          "criterion": "Inadequate bone marrow reserve or organ function.",
+          "match_result": "negative",
+          "comment": "The patient profile indicates that the patient has Platelets at 110,000 cells/mm, which suggests inadequate bone marrow reserve. Therefore, the patient does not meet the criterion of having adequate bone marrow reserve."
+        },
+        {
+          "id": 16,
+          "type": "exclusion",
+          "criterion": "Women who are breastfeeding."
+        },
+        {
+          "id": 0,
+          "type": "inclusion",
+          "criterion": "Male or female aged at least 18 years."
+        },
+        {
+          "id": 1,
+          "type": "inclusion",
+          "criterion": "Histologically confirmed diagnosis of primary NSCLC on predominantly non-squamous histology.",
+          "match_result": "positive",
+          "comment": "The patient has a histologically confirmed diagnosis of primary NSCLC with non-squamous histology, as indicated by the presence of Non-Small Cell Lung Cancer, Adenocarcinoma in the patient profile. Therefore, the patient meets the criteria."
+        },
+        {
+          "id": 2,
+          "type": "inclusion",
+          "criterion": "Magnetic Resonance Imaging (MRI) or contrast computed tomography (CT) scan of the brain.",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide specific information regarding whether a Magnetic Resonance Imaging (MRI) or contrast computed tomography (CT) scan of the brain has been conducted. More information is needed to determine if this criterion is met."
+        },
+        {
+          "id": 3,
+          "type": "inclusion",
+          "criterion": "Participants must be classified post-operatively as Stage II, IIIA, or IIIB on the basis of surgical pathologic criteria.",
+          "match_result": "neutral",
+          "comment": "The patient profile provides detailed information on the Non-Small Cell Lung Cancer subtype, gene mutation, ECOG score, treatment history, biomarkers, and other health status parameters. However, the specific post-operative staging based on surgical pathologic criteria required by the clinical trial criterion is not explicitly mentioned. Further information regarding the post-operative staging classification is needed to determine if the patient matches the criterion."
+        },
+        {
+          "id": 4,
+          "type": "inclusion",
+          "criterion": "Confirmation by the local laboratory that the tumour harbours one of the two common EGFR mutations (Ex19del, L858R), either alone or in combination with other EGFR mutations including de novo EGFR mutation resulting in substitution of threonine with methionine at amino acid position 790 in exon 20 of EGFR (T790M) or uncommon EGFR mutations G719X, S768I, and L861Q, either alone, in combination with each other, or in combination with other uncommon EGFR mutations (excluding all exon 20 insertions) (Uncommon EGFRm Cohort).",
+          "match_result": "neutral",
+          "comment": "The patient profile provides information on the EGFR mutation (exon 19 deletion) which matches the criterion. However, the criterion requires confirmation by the local laboratory of the specific EGFR mutation, including other uncommon mutations like G719X, S768I, and L861Q, which is not explicitly mentioned in the patient profile. More information or test results are needed to determine if the patient meets the full criterion."
+        },
+        {
+          "id": 5,
+          "type": "inclusion",
+          "criterion": "Complete surgical resection of the primary NSCLC is mandatory. All gross disease must have been removed at the end of surgery. All surgical margins of resection must be negative for tumour.",
+          "match_result": "neutral",
+          "comment": "The patient profile provides information on the type of cancer (Non-Small Cell Lung Cancer, Adenocarcinoma) and gene mutation (EGFR activating mutation). However, more specific details are needed to determine if the patient meets the criterion related to complete surgical resection and negative surgical margins. Additional information required includes details on previous surgeries, imaging results showing complete resection, and surgical margin status."
+        },
+        {
+          "id": 6,
+          "type": "inclusion",
+          "criterion": "Complete recovery from surgery and standard post-operative therapy (if applicable) at start of study intervention.",
+          "match_result": "negative",
+          "comment": "The patient profile does not meet the clinical trial criterion as there is no specific mention of complete recovery from surgery and standard post-operative therapy at the start of the study intervention. Additionally, the patient has not received systemic therapy for advanced NSCLC, which also does not align with the criterion."
+        },
+        {
+          "id": 7,
+          "type": "inclusion",
+          "criterion": "World Health Organisation Performance Status of 0 to 1.",
+          "match_result": "positive",
+          "comment": "The patient has an ECOG score of 0, which falls within the World Health Organisation Performance Status of 0 to 1 as required by the criterion."
+        },
+        {
+          "id": 8,
+          "type": "inclusion",
+          "criterion": "Female participants must be using highly effective contraceptive measures, and must have a negative pregnancy test prior to start of dosing if of childbearing potential.",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide explicit information regarding the use of highly effective contraceptive measures or a negative pregnancy test for female participants. Additional information is needed to determine if the patient meets this specific criterion."
+        },
+        {
+          "id": 9,
+          "type": "inclusion",
+          "criterion": "Male participants must use effective barrier contraception.",
+          "match_result": "neutral",
+          "comment": "The patient profile does not provide information regarding the use of effective barrier contraception by male participants, therefore more details are needed to determine if this criterion is met."
+        }
+      ]
+    },
+    {
+      "trial_id": "NCT05261399",
+      "gpt_result_score": 1,
+      "embedding_score": 3,
+      "criteria": [
+        {
+          "id": 0,
+          "type": "exclusion",
+          "criterion": "Predominant squamous NSCLC, and small cell lung cancer. Prior or current treatment with a third-generation EGFR-TKI other than Osimertinib. Prior or current treatment with savolitinib or another MET inhibitors. Spinal cord compression or brain metastases, unless asymptomatic and are stable. History or active leptomeningeal carcinomatosis. Unresolved toxicities from any prior therapy greater than CTCAE Grade 1 with the exception of alopecia, haemoglobin ≥ 9.0 g/dL, and Grade 2 prior platinum-therapy related neuropathy. Active/unstable cardiac diseases currently or within the last 6 months, clinically significant ECG abnormalities, and/or factors/medications that may affect QTc intervals. History of liver cirrhosis of any origin and clinical stage; or history of other serious liver disease or chronic disease with relevant liver involvement. Known serious active infection including, but not limited to, tuberculosis, or HIV, HBV or HCV or gastrointestinal disease. Receipt of live attenuated vaccine (including against COVID-19) within 30 days prior to the first dose of study intervention. Past medical history of ILD, drug-induced ILD, radiation pneumonitis, which required steroid treatment, or any evidence of clinically active ILD. Participants currently receiving medications or herbal supplements known to be strong inducers of cytochrome P450 (CYP)3A4 or strong inhibitors of CYP1A2.",
+          "match_result": "neutral",
+          "comment": "The patient profile provides some information such as NSCLC adenocarcinoma with EGFR activating mutation, ECOG score of 0, and certain biomarkers. However, additional information is needed to determine if the patient meets the exclusion criterion completely, especially regarding prior treatments, liver function, infection status, and other medications."
+        },
+        {
+          "id": 0,
+          "type": "inclusion",
+          "criterion": "Provision of signed and dated written ICF prior to any mandatory and non-mandatory study-specific procedures, sampling and analyses. Participant must be ≥18 years (≥ 20 years of age in Japan) at the time of signing the informed consent. All genders are permitted."
+        },
+        {
+          "id": 1,
+          "type": "inclusion",
+          "criterion": "Histologically or cytologically confirmed locally advanced or metastatic NSCLC which is not amenable to curative therapy. Must have at least one documented sensitising EGFR mutation: exon19 deletion, L858R mutation, and/or T790M. Documented radiologic progression on first- or second-line treatment with osimertinib as the most recent anti-cancer therapy. Mandatory provision of FFPE tumour tissue. MET overexpression and/or amplification in tumour specimen collected following progression on prior osimertinib treatment. Measurable disease as defined by RECIST 1.1. Adequate haematological, liver, renal and cardiac functions, and coagulation parameters. ECOG performance status of 0 or 1.",
+          "match_result": "neutral",
+          "comment": "While the patient has an EGFR activating mutation (exon 19 deletion) as required by the criterion, additional information is needed to determine if the patient meets all the criteria. Specifically, there is no information provided about documented radiologic progression on osimertinib, MET overexpression and/or amplification, provision of FFPE tumour tissue, and whether the patient has measurable disease as defined by RECIST 1.1. Further details are required to confirm if the patient fully meets the criteria."
+        },
+        {
+          "id": 2,
+          "type": "inclusion",
+          "criterion": "Participant must be ≥18 years (≥ 20 years of age in Japan) at the time of signing the informed consent. All genders are permitted."
+        },
+        {
+          "id": 3,
+          "type": "inclusion",
+          "criterion": "Documented radiologic progression on first- or second-line treatment with osimertinib as the most recent anti-cancer therapy.",
+          "match_result": "neutral",
+          "comment": "The patient profile lacks information on prior treatments with osimertinib or other anti-cancer therapies, which is crucial to determine if the criterion regarding radiologic progression on first- or second-line treatment with osimertinib is met. Further details on treatment history are needed to make a conclusive assessment."
+        },
+        {
+          "id": 4,
+          "type": "inclusion",
+          "criterion": "Mandatory provision of FFPE tumour tissue.",
+          "match_result": "negative",
+          "comment": "The patient profile does not meet the clinical trial criterion as there is no mention of FFPE tumour tissue being mandatory provisioned."
+        },
+        {
+          "id": 5,
+          "type": "inclusion",
+          "criterion": "MET overexpression and/or amplification in tumour specimen collected following progression on prior osimertinib treatment.",
+          "match_result": "neutral",
+          "comment": "While the patient profile provides detailed information on the type of lung cancer, gene mutation, ECOG score, treatment history, biomarkers, and other health status parameters, there is no explicit mention of MET overexpression and/or amplification specifically following progression on prior osimertinib treatment. Further information regarding this specific criterion is needed to determine if the patient matches the clinical trial criterion."
+        },
+        {
+          "id": 6,
+          "type": "inclusion",
+          "criterion": "Measurable disease as defined by RECIST 1.1.",
+          "match_result": "neutral",
+          "comment": "More information regarding the presence of measurable disease as defined by RECIST 1.1 is needed from the patient profile to determine if the patient meets this criterion."
+        },
+        {
+          "id": 7,
+          "type": "inclusion",
+          "criterion": "Adequate haematological, liver, renal and cardiac functions, and coagulation parameters.",
+          "match_result": "negative",
+          "comment": "The patient's profile meets the criterion by having adequate liver and renal functions. However, the patient's platelet count is below the normal range which may indicate inadequate haematological function according to the criterion."
+        },
+        {
+          "id": 8,
+          "type": "inclusion",
+          "criterion": "ECOG performance status of 0 or 1.",
+          "match_result": "positive",
+          "comment": "The patient's ECOG performance status is 0, which meets the criterion requirement of ECOG performance status of 0 or 1."
+        }
+      ]
+    },
+    {
+      "trial_id": "NCT05133544",
+      "gpt_result_score": 0,
+      "embedding_score": 1,
+      "criteria": [
+        {
+          "id": 0,
+          "type": "exclusion",
+          "criterion": "Patients will be excluded if they have history of inflammatory bowel disease, colorectal cancer, previous bowel resection, Peutz-Jeghers syndrome, familial adenomatous polyposis or other polyposis syndromes, bleeding tendency or severe comorbid illnesses for which polypectomy is considered unsafe.",
+          "match_result": "neutral",
+          "comment": "The patient profile provided does not contain sufficient information to determine if the patient meets the exclusion criteria of the clinical trial. Additional information regarding the patient's history of inflammatory bowel disease, colorectal cancer, previous bowel resection, Peutz-Jeghers syndrome, familial adenomatous polyposis or other polyposis syndromes, bleeding tendency, or severe comorbid illnesses would be required to make a definitive assessment."
+        },
+        {
+          "id": 1,
+          "type": "exclusion",
+          "criterion": "Moreover, after randomization, if the cecum could not be intubated for various reasons or Boston Bowel Preparation Scale (BBPS) score is <2, these patients will be excluded",
+          "match_result": "neutral",
+          "comment": "The patient profile provided does not contain specific information related to cecum intubation or Boston Bowel Preparation Scale (BBPS) score, which are the key factors in the exclusion criterion. More information is needed from the patient profile to determine if this patient meets the criterion."
+        },
+        {
+          "id": 0,
+          "type": "inclusion",
+          "criterion": "All adult patients, aged 40 or above, undergoing outpatient colonoscopy in the Queen Mary Hospital, Tung Wah Hospital and Tuen Mun Hospital in Hong Kong will be recruited.",
+          "match_result": "negative",
+          "comment": "The patient profile does not match the criterion. The patient is not an adult aged 40 or above undergoing outpatient colonoscopy in the specified hospitals in Hong Kong. Additionally, the patient's condition is Non-Small Cell Lung Cancer, not related to colonoscopy."
+        }
+      ]
+    }
+  ]
+}
