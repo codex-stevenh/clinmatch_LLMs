@@ -28,6 +28,7 @@ client = ollama.Client(host='http://192.168.0.107:11434')
 
 if "_model" not in st.session_state:
     st.session_state["_model"] = "llama3:8b"
+    # st.session_state["_model"] = "gemma:7b"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

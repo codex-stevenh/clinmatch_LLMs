@@ -22,13 +22,13 @@ CMD ["python3","app.py"]
 
 
 ##################################################
-# sudo docker build -t clinmatchgradio_main_app:v0 .
+# sudo docker build -t clinmatch_llm_comparsion_app:v0 .
 
 # # -t to keep it running
 # sudo docker run -d --name gradio -p 127.0.0.1:7863:7860 -e GRADIO_SERVER_NAME=0.0.0.0 simplegradio:v0
 # sudo docker run -d -t --name gradio_bg_env -p 127.0.0.1:7863:7860 -e GRADIO_SERVER_NAME=0.0.0.0 simplegradio_noexe:v0
 # sudo docker run -d -t --name gradio_bg_env -p 127.0.0.1:7863:7860 clinmatchgradio_bg:v0
-# docker run -d -t --name gradio_main_app -p 0.0.0.0:7863:7860 --env-file .env clinmatchgradio_main_app:v0
+# docker run -d -t --name gradio_llm_comparison_app -p 0.0.0.0:7861:7860 clinmatch_llm_comparsion_app:v0
 
 # # crlt+d to exit
 # sudo docker exec -it gradio_main_app bash 
