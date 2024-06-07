@@ -22,6 +22,7 @@ def ollama_generator(model_name: str, messages: Dict) -> Generator:
     for chunk in stream:
         yield chunk['message']['content']
 
+st.set_page_config(layout="wide")
 st.title("Codex-Assistant")
 
 client = ollama.Client(host='http://192.168.0.107:11434')
