@@ -25,7 +25,7 @@ def ollama_generator(model_name: str, messages: Dict) -> Generator:
 st.set_page_config(layout="wide")
 st.title("Codex-Assistant")
 
-client = ollama.Client(host='http://192.168.0.107:11434')
+client = ollama.Client(host='http://192.168.0.107:11436')
 
 if "_model" not in st.session_state:
     st.session_state["_model"] = "llama3:8b"

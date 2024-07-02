@@ -20,5 +20,5 @@ HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 ENTRYPOINT ["streamlit", "run", "streamlit_chat_llama.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
 ##################################################
-# docker build -t codex_chatassistant_app:v0 .
+# docker build -t codex_chatassistant_app:v1 .
 # docker run -d -t --name chat_assistant_app -p 0.0.0.0:8501:8501 codex_chatassistant_app:v0
